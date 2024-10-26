@@ -9,16 +9,56 @@
 <body>
     <div id="root">
         <header>
-            <h1>Budgeting Tool for Texas Teachers</h1>
+            <div id="navbar" class="navbar">
+                <img src="logo.png" alt="Logo" id="logo" class="logo">
+                <div id="nav-links">
+                    <a id="nav" href="home.html">Home</a>
+                    <a id="nav" href="about.html">About Us</a>
+                </div>
+            </div>        
         </header>
         <main class="container">
+            <h1>Texas Teacher's Budgeting Tool</h1>
             <form class="budget-form">
-                <!-- Input fields for salary, expenses, and contributions -->
-            </form>
+                <div class="form-group">
+                    <label for="salary">Yearly Salary</label><br>
+                    <input type="text" id="salary" placeholder="Enter your salary"><br>
+                    
+                    <label for="expenses">Monthly Expenses</label><br>
+                    <input type="text" id="expenses" placeholder="Enter your monthly expenses"><br>
+                    
+                    <label for="current-age">Current Age</label><br>
+                    <input type="text" id="current-age" placeholder="Enter your current age"><br>
+                    
+                    <label for="retirement-age">Target Retirement Age</label><br>
+                    <input type="text" id="retirement-age" placeholder="Enter your target retirement age"><br>
+                </div>
+                <div class="sliders">
+                    <div class="slider-container">
+                        <label for="TRS">TRS:</label>
+                        <span id="TRSVal">$0</span>
+                        <input type="range" id="TRS" min="0" max="100000" step="1000" value="0" oninput="updateSliderVal('TRS', 'TRSVal')">
+                    </div>
+                
+                    <div class="slider-container">
+                        <label for="403b">403(b):</label>
+                        <span id="403Val">$0</span>
+                        <input type="range" id="403b" min="0" max="100000" step="1000" value="0" oninput="updateSliderVal('403b', '403Val')">
+                    </div>
+                
+                    <div class="slider-container">
+                        <label for="IRA">IRA:</label>
+                        <span id="IRAVal">$0</span>
+                        <input type="range" id="IRA" min="0" max="100000" step="1000" value="0" oninput="updateSliderVal('IRA', 'IRAVal')">
+                    </div>
+                </div>
+                
+                </form>
             <div class="summary">
                 <!-- Summary display for projected income and savings -->
             </div>
         </main>
+        
         <footer>
             <p>&copy; 2024 Your Company</p>
         </footer>

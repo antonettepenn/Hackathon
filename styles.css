@@ -1,0 +1,151 @@
+/* Font Styles */
+* {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300; 
+    font-style: normal;
+}
+
+/* Page Layout */
+html, body {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    padding: 40px; 
+    min-height: 100vh;
+    box-sizing: border-box; 
+}
+
+/* Header Styles */
+header {
+    position: relative; 
+    margin: 0;
+    width: 100%;
+    z-index: 99;
+    height: 70px; 
+    background-color: #F5EEE9;
+}
+
+/* Footer Styles */
+footer {
+    position: relative; 
+    width: 100%;
+    z-index: 99;
+    padding: 10px 0; 
+    text-align: center;
+    margin-top: auto; 
+}
+
+/* Navigation Styles */
+#navbar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%; 
+    padding: 0 30px; 
+    background-color: #F5EEE9; 
+}
+
+/* Logo Styles */
+.logo {
+    max-width: 90px; 
+    height: auto; 
+}
+
+/* Navigation Links */
+#nav {
+    padding-right: 80px; 
+}
+
+/* Navigation Link Styles */
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em; 
+}
+
+/* Heading Styles */
+h1 {
+    font-weight: 400;
+    font-size: 50px; 
+}
+
+/* Budget Form Styles */
+.budget-form {
+    font-size: 1.5em; 
+    display: flex;
+    justify-content: space-evenly; 
+    padding: 40px; 
+    width: 100%; 
+    max-width: 800px; 
+    margin-bottom: 30px; 
+    border: 1px solid #ccc; 
+    border-radius: 12px; 
+    background-color: #fff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+}
+
+/* Form and Slider Section Styles */
+.form-section, .slider-section {
+    display: flex;
+    flex-direction: column;
+    width: 45%; 
+}
+
+
+.slider-section {
+    margin-left: 0px;
+}
+
+/* Slider Container Styles */
+.slider-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-bottom: 20px; 
+}
+
+/* Slider Label Styles */
+.slider-container label {
+    font-size: 1.2em; 
+    margin-bottom: 5px; 
+}
+
+/* Slider Input Styles */
+.slider-container input[type="range"] {
+    width: 100%; 
+}
+
+/* Slider Value Styles */
+.slider-container span {
+    font-size: 1.2em; 
+    display: inline-block;
+}
+
+/* Input Styles */
+input {
+    padding: 15px; 
+    margin-bottom: 15px; 
+    margin-top: 15px; 
+    font-size: 1.2em; 
+}
+
+/* Summary Styles */
+.summary {
+    width: 100%; 
+    max-width: 700px; 
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px; 
+    }
+}
