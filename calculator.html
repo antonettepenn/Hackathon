@@ -9,13 +9,12 @@
 <body>
     <header>
         <nav>
-            <a href="chatbot.html">Budgeting Chatbot</a>
             <a href="index.html">Home</a>
+            <a href="chatbot.html">Budgeting Chatbot</a>
         </nav>
     </header>
     <div id="root">
         <main class="container">
-
             <div class="text-section">           
                 <h1>Plan Your Future with Confidence</h1>
                 <p>Welcome to our Retirement Calculator, designed specifically for Texas teachers! Easily estimate your retirement savings, set your goals, and plan for a secure future.</p>
@@ -23,7 +22,7 @@
             </div>
             
             <div class="form-section" id="form-container">
-                <form id="results"  class="budget-form" onsubmit="calculateRetirement(); return false;">
+                <form id="results" class="budget-form" onsubmit="calculateRetirement(); return false;">
                     <label for="salary">Yearly Salary:</label>
                     <input type="number" id="salary" placeholder="Enter your salary" required>
                   
@@ -48,6 +47,7 @@
                     <button type="submit">Calculate Yours!</button>
                 </form>
             </div>
+
         </main>
     </div>
     <script src="script.js"></script>

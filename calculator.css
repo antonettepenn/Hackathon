@@ -8,18 +8,19 @@
   
 header {
     position: fixed;
-    top: 0;
+    top: 0px;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255); /* Semi-transparent background */
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 1.0); /* Semi-transparent background */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
     z-index: 1000; /* Ensures the header is above other content */
     display: flex; /* Use flexbox to align items */
     justify-content: flex-end; /* Align items to the right */
 }
 
 header a {
+    font-size: medium;
     margin: 0 15px; /* Space between links */
     color: black; /* Link color */
     text-decoration: none; /* No underline */
@@ -102,6 +103,7 @@ body {
     top: 0;
     animation: fadeInLeft 0.8s ease;
     overflow-y: auto;
+    overflow: scroll;
   }
   
   .text-section h1 {
@@ -121,14 +123,20 @@ body {
   .form-section {
     width: 70%;
     padding: 60px;
+    padding-top: 60px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-height: 100vh; /* Max height for scrollable content */
     overflow-y: auto; /* Enable scrolling */
     margin-left: 30%; /* Align with text-section width */
+    overflow: scroll;
 }
   
+#results{
+    min-height: 300px; /* Adjust based on your layout */
+}
+
   .budget-form {
     padding-top: 10px;
     font-size: 1.2em;

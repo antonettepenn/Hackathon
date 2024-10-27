@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budgeting App</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your CSS file here -->
+    <script src="budget.js" defer></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+    <header>
+        <h1>Budgeting with Your Retirement Income</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="planning.html">Planning</a>
+            <a href="assessment.html">Assessment</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <label for="monthlyIncome">Total Monthly Retirement Income:</label>
+            <input type="number" id="monthlyIncome" placeholder="Enter amount" />
+        </div>
+        
+        <h2>Monthly Expenses</h2>
+        <div>
+            <label for="housing">Housing:</label>
+            <input type="number" id="housing" placeholder="Enter amount" />
+        </div>
+        <div>
+            <label for="groceries">Groceries:</label>
+            <input type="number" id="groceries" placeholder="Enter amount" />
+        </div>
+        <div>
+            <label for="healthcare">Healthcare:</label>
+            <input type="number" id="healthcare" placeholder="Enter amount" />
+        </div>
+        <div>
+            <label for="entertainment">Entertainment:</label>
+            <input type="number" id="entertainment" placeholder="Enter amount" />
+        </div>
+        <button id="calculateBudget">Calculate Budget</button>
+        
+        <h2>Results</h2>
+        <p id="budgetResult"></p>
+        <canvas id="budgetChart" width="400" height="200"></canvas>
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Retirement Tool</p>
+    </footer>
+</body>
+</html>

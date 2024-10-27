@@ -13,6 +13,31 @@ html, body {
     height: 100%; 
 }
 
+header {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1.0); /* Semi-transparent background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1000; /* Ensures the header is above other content */
+    display: flex; /* Use flexbox to align items */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+header a {
+    margin: 0 15px; /* Space between links */
+    color: black; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: 300;
+}
+
+header a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
 /* Home Styles */
 .home {
     display: flex;
