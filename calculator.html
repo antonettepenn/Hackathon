@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <title>Budgeting Tool</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="chatbot.html">Budgeting Chatbot</a>
+            <a href="index.html">Home</a>
+        </nav>
+    </header>
+    <div id="root">
+        <main class="container">
+
+            <div class="text-section">           
+                <h1>Plan Your Future with Confidence</h1>
+                <p>Welcome to our Retirement Calculator, designed specifically for Texas teachers! Easily estimate your retirement savings, set your goals, and plan for a secure future.</p>
+                <p>Input your current savings, desired retirement age, and expected expenses to see how much you'll need. Start taking control of your financial future today!</p>
+            </div>
+            
+            <div class="form-section" id="form-container">
+                <form id="results"  class="budget-form" onsubmit="calculateRetirement(); return false;">
+                    <label for="salary">Yearly Salary:</label>
+                    <input type="number" id="salary" placeholder="Enter your salary" required>
+                  
+                    <label for="yearsOfService">Years of Service:</label>
+                    <input type="number" id="yearsOfService" placeholder="Enter your years of service" required>
+                  
+                    <label for="averageSalary">Highest Average Salary:</label>
+                    <input type="number" id="averageSalary" placeholder="Enter your average highest salary" required>
+                  
+                    <label for="403bContribution">Annual 403(b) Contribution:</label>
+                    <input type="number" id="403bContribution" placeholder="Enter your annual 403(b) contribution" required>
+                  
+                    <label for="iraContribution">Annual IRA Contribution:</label>
+                    <input type="number" id="iraContribution" placeholder="Enter your annual IRA contribution" required>
+                  
+                    <label for="growthRate">Expected Growth Rate (%):</label>
+                    <input type="number" id="growthRate" placeholder="Enter expected growth rate" value="5" required>
+                  
+                    <label for="yearsUntilRetirement">Years Until Retirement:</label>
+                    <input type="number" id="yearsUntilRetirement" placeholder="Enter years until retirement" required>
+                    
+                    <button type="submit">Calculate Yours!</button>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
